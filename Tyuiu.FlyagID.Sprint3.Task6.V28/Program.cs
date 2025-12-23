@@ -1,28 +1,27 @@
-﻿using Tyuiu.FlyagID.Sprint3.Task0.V4.Lib;
+﻿using Tyuiu.FlyagID.Sprint3.Task6.V28.Lib;
 
 Console.Title = "Спринт #3 | Выполнил: Иван Фляг Дмитриевич | ИСПб-25-1";
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* Спринт #3                                                               *");
-Console.WriteLine("* Тема: Использование операторов break и continue в циклах               *");
-Console.WriteLine("* Задание #4                                                              *");
-Console.WriteLine("* Вариант #24                                                             *");
+Console.WriteLine("* Тема: Обработка целочисленной информации                                *");
+Console.WriteLine("* Задание #6                                                              *");
+Console.WriteLine("* Вариант #28                                                             *");
 Console.WriteLine("* Выполнил: Иван Фляг Дмитриевич | ИСПб-25-1                               *");
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* УСЛОВИЕ:                                                                *");
-Console.WriteLine("* На отрезке от -5 до 5 вычислить значение функции                        *");
-Console.WriteLine("* y = (sin(x) / x) + 2. При x = 0 прервать цикл.                          *");
-Console.WriteLine("* Полученные значения перемножать.                                        *");
+Console.WriteLine("* Найти среди целых чисел на отрезке [13, 19] количество всех делителей   *");
+Console.WriteLine("* меньше 7                                                               *");
 Console.WriteLine("***************************************************************************");
 
-int startValue = -5;
-int stopValue = 5;
+int startValue = 13;
+int stopValue = 19;
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
 DataService ds = new DataService();
-double result = ds.Calculate(startValue, stopValue);
+int result = ds.GetCountDivisors(startValue, stopValue);
 
-Console.WriteLine($"Произведение значений функции = {result}");
+Console.WriteLine($"Количество делителей меньше 7 = {result}");
 Console.ReadLine();

@@ -1,5 +1,4 @@
-﻿using tyuiu.cources.programming.interfaces;
-using tyuiu.cources.programming.interfaces.Sprint3;
+﻿using tyuiu.cources.programming.interfaces.Sprint3;
 namespace Tyuiu.FlyagID.Sprint3.Task0.V4.Lib
 {
     public class DataService : ISprint3Task0V4
