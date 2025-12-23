@@ -21,7 +21,7 @@ Console.WriteLine("* РЕЗУЛЬТАТ:                                        
 Console.WriteLine("***************************************************************************");
 
 DataService ds = new DataService();
-int result = ds.GetCountDivisors(startValue, stopValue);
+int result = ds.GetSumTheDivisors(startValue, stopValue);
 
 Console.WriteLine($"Количество делителей меньше 7 = {result}");
 Console.ReadLine();

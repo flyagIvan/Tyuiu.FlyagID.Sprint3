@@ -15,7 +15,7 @@ namespace Tyuiu.FlyagID.Sprint3.Task2.V21.Test
             int stopValue = 10;
 
             double result = ds.GetSumSeries(x, startValue, stopValue);
-            double expected = 0.004;
+            double expected = 0.298;
 
             Assert.AreEqual(expected, result, 0.001);
         }

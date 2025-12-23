@@ -7,25 +7,28 @@ namespace Tyuiu.FlyagID.Sprint3.Task7.V29.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            int len = stopValue - startValue + 1;
-            double[] values = new double[len];
+            int length = stopValue - startValue + 1;
+            double[] result = new double[length];
 
-            int i = 0;
+            int index = 0;
             for (int x = startValue; x <= stopValue; x++)
             {
-                if (Math.Abs(Math.Cos(x)) < 0.0001)
+                double denominator = Math.Cos(x) - 2 * x;
+
+                if (Math.Abs(denominator) < 0.0001)
                 {
-                    values[i] = 0;
+                    result[index] = 0;
                 }
                 else
                 {
-                    double fx = (2 * x - 3 / Math.Cos(x) - 2 * x) + 5 * x - 6;
-                    values[i] = Math.Round(fx, 2);
+                    double value = (2 * x - 3) / denominator + 5 * x - 6;
+                    result[index] = Math.Round(value, 2);
                 }
-                i++;
+
+                index++;
             }
 
-            return values;
+            return result;
         }
     }
 }

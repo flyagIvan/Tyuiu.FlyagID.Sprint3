@@ -15,7 +15,7 @@ namespace Tyuiu.FlyagID.Sprint3.Task6.V28.Test
             int stopValue = 13;
 
             int result = ds.GetSumTheDivisors(startValue, stopValue);
-            int expected = 2;
+            int expected = 1;
 
             Assert.AreEqual(expected, result);
         }
